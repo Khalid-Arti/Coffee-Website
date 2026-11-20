@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Noir & Oak — thoughtfully brewed coffee, all day." />
+    <title>Noir & Oak | Coffee, thoughtfully brewed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .events-section{padding-top:0}.events-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.event-card{background:var(--paper);padding:25px;min-height:175px;border-top:3px solid var(--orange)}.event-card span{font-size:10px;letter-spacing:.12em;color:#765c47;font-weight:700}.event-card h3{font:600 23px 'Playfair Display',serif;margin:16px 0 8px}.event-card p{font-size:13px;line-height:1.55;color:#624f42;margin:0}.owner-button{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--paper);border:1px solid rgba(36,24,15,.2);box-shadow:0 8px 24px rgba(36,24,15,.15);color:var(--ink);font:700 10px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.08em;padding:13px 14px;cursor:pointer}.owner-button span{font-size:15px;margin-left:6px}.owner-panel{position:fixed;z-index:30;top:0;right:0;height:100dvh;width:min(420px,100%);background:var(--paper);transform:translateX(102%);transition:transform .3s ease;overflow-y:auto;padding:34px 30px;box-shadow:-10px 0 35px rgba(36,24,15,.17)}.owner-panel.open{transform:none}.panel-backdrop{opacity:0;pointer-events:none;background:rgba(36,24,15,.32);position:fixed;inset:0;z-index:25;transition:opacity .3s}.panel-backdrop.open{opacity:1;pointer-events:auto}.panel-head{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid var(--line);padding-bottom:21px}.panel-head .eyebrow{margin-bottom:8px}.panel-head h2{font:600 31px 'Playfair Display',serif;margin:0}.panel-close{font:400 32px/1 'DM Sans',sans-serif;border:0;background:none;color:var(--ink);cursor:pointer}.site-form,.event-form{display:grid;gap:15px;margin-top:25px}.site-form label{font-size:10px;font-weight:700;letter-spacing:.1em;color:#765c47}.owner-panel input,.owner-panel textarea{width:100%;display:block;margin-top:7px;border:1px solid var(--line);background:#fffdf9;padding:11px;font:13px/1.4 'DM Sans',sans-serif;color:var(--ink);resize:vertical}.owner-panel input:focus,.owner-panel textarea:focus{outline:1px solid var(--orange);border-color:var(--orange)}.panel-actions{display:flex;align-items:center;gap:16px;margin-top:3px}.reset-button{border:0;background:none;text-decoration:underline;color:#765c47;font:600 11px 'DM Sans',sans-serif;cursor:pointer}.event-controls{margin-top:35px;padding-top:25px;border-top:1px solid var(--line)}.event-controls .eyebrow{margin-bottom:6px}.event-controls h3{font:600 23px 'Playfair Display',serif;margin:0}.event-form .button{justify-content:space-between;border:0;cursor:pointer}.event-manager{margin-top:15px;display:grid;gap:9px}.managed-event{display:flex;justify-content:space-between;gap:10px;padding:11px;background:#f6f0e7;font-size:12px}.managed-event b{display:block;margin-bottom:3px}.managed-event button{align-self:center;border:0;background:none;color:var(--orange);font:700 10px 'DM Sans',sans-serif;cursor:pointer;text-decoration:underline}.save-message{color:#765c47;font-size:11px;min-height:15px}.announcement-bar{background:var(--orange);color:#fffaf1;text-align:center;padding:11px 20px;font-size:11px;font-weight:700;letter-spacing:.06em}@media(max-width:760px){.events-list{grid-template-columns:1fr}.owner-panel{padding:28px 20px}.owner-button{right:12px;bottom:12px}}
+    </style>
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Noir & Oak home"><span class="brand-mark">N</span> <span class="brand-name">NOIR &amp; OAK</span></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+        <div class="nav-links">
+          <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About us</a><a href="#contact">Contact</a>
+          <a class="button button-small" href="#contact">Order now <b>↗</b></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy fade-up">
+          <p class="eyebrow">EST. 2018 · DOWNTOWN</p>
+          <h1>Your Daily Dose<br />of <em>Happiness.</em></h1>
+          <p class="intro">Small-batch coffee, made with care. Find your moment of calm in every beautifully crafted cup.</p>
+          <div class="hero-actions"><a class="button" href="#menu">Explore our menu <b>↗</b></a><a class="text-link" href="#about">Our story <span>→</span></a></div>
+          <div class="hero-note"><div class="avatar-stack"><img src="assets/latte.jpg" alt="" /><img src="assets/cold-brew.jpg" alt="" /><img src="assets/cappuccino.jpg" alt="" /></div><span>Loved by 2,000+ regulars</span></div>
+        </div>
+        <div class="hero-image fade-up"><img src="assets/hero.jpg" alt="A freshly poured latte on a cafe table" /><div class="coffee-stamp"><span>✦</span><small>MADE<br />WITH LOVE</small></div></div>
+      </section>
+
+      <section class="marquee" aria-label="Coffee qualities"><div>ETHICALLY SOURCED <b>✦</b> EXPERTLY ROASTED <b>✦</b> BEAUTIFULLY BREWED <b>✦</b> ETHICALLY SOURCED <b>✦</b> EXPERTLY ROASTED <b>✦</b></div></section>
+
+      <section class="menu-section container section" id="menu">
+        <div class="section-heading"><div><p class="eyebrow">SIP SOMETHING SPECIAL</p><h2>Popular <em>pours</em></h2></div><a class="text-link" href="#contact">View full menu <span>→</span></a></div>
+        <div class="menu-grid">
+          <article class="drink-card"><div class="drink-image"><img src="assets/latte.jpg" alt="Classic latte" /><span>BESTSELLER</span></div><div class="drink-info"><div><h3>House Latte</h3><p>Double espresso, silky steamed milk</p></div><strong>$5.50</strong></div></article>
+          <article class="drink-card"><div class="drink-image"><img src="assets/cold-brew.jpg" alt="Iced coffee" /></div><div class="drink-info"><div><h3>Cold Brew</h3><p>Slow-steeped for 18 hours</p></div><strong>$5.00</strong></div></article>
+          <article class="drink-card"><div class="drink-image"><img src="assets/mocha.jpg" alt="Mocha coffee" /></div><div class="drink-info"><div><h3>Dark Mocha</h3><p>70% dark chocolate, espresso</p></div><strong>$6.00</strong></div></article>
+          <article class="drink-card"><div class="drink-image"><img src="assets/cappuccino.jpg" alt="Cappuccino" /></div><div class="drink-info"><div><h3>Oat Cappuccino</h3><p>Velvety oat milk, cinnamon dust</p></div><strong>$5.75</strong></div></article>
+        </div>
+      </section>
+
+      <section class="about section" id="about"><div class="about-image"><img src="assets/cafe.jpg" alt="Warm, inviting coffee shop interior" /></div><div class="about-copy"><p class="eyebrow">OUR LITTLE CORNER</p><h2>More than<br />just <em>coffee.</em></h2><p>We created Noir &amp; Oak as a place to pause. A neighborhood room where impeccable coffee, good food, and unhurried conversation make the everyday feel a little more special.</p><a class="text-link" href="#contact">Get to know us <span>→</span></a><div class="about-detail"><span>01</span><p><b>Seasonal, local, intentional.</b><br />We partner with people who care as much as we do.</p></div></div></section>
+
+      <section class="events-section container section" id="events" hidden><div class="section-heading"><div><p class="eyebrow">AT THE CAFÉ</p><h2>What's <em>on</em></h2></div></div><div class="events-list"></div></section>
+
+      <section class="contact-section container section" id="contact"><div><p class="eyebrow">COME SAY HELLO</p><h2>Find your<br /><em>favourite table.</em></h2><a class="button call-button" href="tel:+15550191188">Call us <b>↗</b></a></div><div class="contact-details"><div><span>LOCATION</span><p class="location-text">142 Willow Street<br />Downtown, New York</p></div><div><span>OPENING HOURS</span><p class="hours-text">Mon–Fri: 7am–6pm<br />Sat–Sun: 8am–5pm</p></div><div><span>GET IN TOUCH</span><p><a class="phone-text" href="tel:+15550191188">+1 555 019 1188</a><br /><a href="mailto:hello@noirandoak.com">hello@noirandoak.com</a></p></div></div></section>
+    </main>
+
+    <footer><div class="container footer-top"><a class="brand" href="#home"><span class="brand-mark">N</span> <span class="brand-name">NOIR &amp; OAK</span></a><div class="footer-links"><a href="#menu">Menu</a><a href="#about">Our story</a><a href="#contact">Visit us</a></div><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="TikTok">tk</a></div></div><div class="container footer-bottom"><span>© 2024 <span class="brand-name">Noir &amp; Oak</span> Coffee Co.</span><span>Made for slow mornings.</span></div></footer>
+    <button class="owner-button" type="button" aria-expanded="false" aria-controls="owner-panel">Manage site <span>⚙</span></button>
+    <aside class="owner-panel" id="owner-panel" aria-hidden="true">
+      <div class="panel-head"><div><p class="eyebrow">OWNER CONTROLS</p><h2>Manage your site</h2></div><button class="panel-close" type="button" aria-label="Close controls">×</button></div>
+      <form class="site-form">
+        <label>Shop name<input name="name" maxlength="28" /></label>
+        <label>Location<textarea name="location" rows="2" maxlength="80"></textarea></label>
+        <label>Phone number<input name="phone" maxlength="32" /></label>
+        <label>Opening hours<textarea name="hours" rows="2" maxlength="80"></textarea></label>
+        <label>Announcement <textarea name="announcement" rows="2" maxlength="140" placeholder="e.g. Holiday hours start this Friday"></textarea></label>
+        <div class="panel-actions"><button class="button" type="submit">Save changes <b>↗</b></button><button class="reset-button" type="button">Reset</button></div>
+      </form>
+      <div class="event-controls"><p class="eyebrow">EVENTS</p><h3>Add an event</h3><form class="event-form"><input name="eventName" required placeholder="Event name" maxlength="60" /><input name="eventDate" required placeholder="Date & time" maxlength="50" /><textarea name="eventDescription" required rows="2" placeholder="Short description" maxlength="180"></textarea><button class="button" type="submit">Add event <b>+</b></button></form><div class="event-manager"></div></div>
+      <p class="save-message" aria-live="polite"></p>
+    </aside>
+    <div class="panel-backdrop"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
